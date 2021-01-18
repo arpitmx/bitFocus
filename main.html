@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Lecture Hall
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+
+<div><h1 >Lecture Hall 📚 </h1></div>
+
+<div class = "row">
+ 
+  <div class="column">
+
+  <iframe id="banner" width="400" height="315" 
+  src = "https://www.youtube.com/embed/BuYLZigga7U?rel=0"
+  frameborder="0" allow="accelerometer; autoplay; 
+  clipboard-write; encrypted-media; gyroscope;
+   picture-in-picture" allowfullscreen>
+  </iframe>
+
+</div>
+ 
+  
+
+
+<h2 id= 'timer'>Up Next🔥</h2>
+<div id= "lis" class="scrollmenu" name = "scroll"></div> 
+
+<script>
+ 
+ var mainBanner = document.getElementById("banner");
+ mainBanner.src = "https://www.youtube.com/embed/"+ids[0]+"?rel=0"
+
+  console.log("https://www.youtube.com/embed/"+ids[0]+"?rel=0")
+  console.log(links)
+  var listt = document.getElementById('lis')
+  console.log(listt)
+
+
+for (var i = 0; i < links.length ; i ++){
+    var html = "";  
+    html +="<img  src='http://img.youtube.com/vi/"+ids[i]+"/0.jpg'></img>";
+    console.log('http://img.youtube.com/vi/'+(ids[i])+'/0.jpg')
+    
+    listt.innerHTML += html;
+
+
+}
+for (var i = 0, len = listt.children.length; i < len; i++)
+{
+
+    (function(index){
+        listt.children[i].onclick = function(){
+              alert("Ready for the next series !") ;
+              mainBanner.src = "https://www.youtube.com/embed/"+ids[index]+"?rel=0"
+ 
+        }    
+    })(i);
+
+    
+}
+
+
+
+  </script>
+
+
+
+</body>
