@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    S.U.A.S
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+
+<div>
+  <label >Welcome to Shut Up And Study!</label>
+</div>
+
+<div class="container">
+    <form action="/Landing/MainPage/main.html">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Name</label>
+        </div>
+        <div class="col-75">
+          <input id= "Namebox" type="text"  name="nb" placeholder="Your name..">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Video Links </label>
+        </div>
+        <div class="col-75">
+          <textarea id="LinkBox" name="subject" placeholder="Paste your Youtube links here , seperated by commas." style="height:200px"></textarea>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <input id = "sbtn" onclick = "fun('Namebox','LinkBox')" type="submit" value="Submit">
+      
+      </div>
+   
+    </form>
+  </div> 
+
+</body>
