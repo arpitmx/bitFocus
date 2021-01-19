@@ -1,7 +1,7 @@
 # SUAS 📚
 Shut Up And Study is a recommendation less YT videos streaming for students for minimizing timewaste ;)
 
-# Steps:
+## Steps:
 1. Just paste all the youtube SHARED links seperated by commas(,) and click submit to build the video stack.
 2. Watch with complete focus.
 
