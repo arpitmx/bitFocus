@@ -7,7 +7,7 @@ Shut Up And Study is a recommendation less YT videos streaming for students for 
 
 >Live : www.bitpolarity.in/suas
 
-# Screens
+## Screens:
 <p float="left">
   <img src="https://github.com/arpitmaurya/SUAS/blob/main/Screenshots/Screenshot%20from%202021-01-18%2022-38-21.png" width="250" />
   <img src="https://github.com/arpitmaurya/SUAS/blob/main/Screenshots/Screenshot%20from%202021-01-18%2022-38-32.png" width="250" /> 
