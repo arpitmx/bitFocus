@@ -1,14 +1,20 @@
 
-  
+
   /* Style the label to display next to the inputs */
  h1{
-  
+ 
     display: inline-block;
+    width: 100%;
     font-style: it;
     font: outline;
-    font-size: 2.5em;
-    box-shadow: 30px;
+    font-size: 1.7em;
+  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(180deg, rgb(212, 212, 212), rgb(252, 252, 252));
+    margin: 0px;
+  color: rgb(49, 49, 49);
+
+  border-radius:5px;
   }
   h2{
   
@@ -16,36 +22,97 @@
     display: inline-block;
     font-style: bold;
     font: outline;
-    font-size: 1.2em;
-    box-shadow: 30px;
+    font-size: 1.6em;
+    box-shadow: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
-  
+  h2:hover{
+    box-shadow: 0 0 2px 3px rgb(46, 46, 46);
+
+  }
 
   iframe{
-    margin: auto;
-    width: 85%;
+    margin: 11px;
+    width: 95%;
     height: 560px; 
-    border: 5px solid rgb(70, 70, 70);
-    padding: 5px;
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 20px;
     box-sizing: border-box;
     resize: vertical;
-  
+    border-radius:5px;
+   
+    border-radius:6px;
   }
 
+ul{
 
+  border-radius: 5px;
+  margin: 20px;
+  color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+li{
+  color:black;
+}
+
+
+nav ul{height:400px; width:100%;
+}
+nav ul{overflow:hidden; overflow-y:scroll;}
+
+
+
+
+li:hover{
+  background-image: linear-gradient(180deg, rgba(179, 179, 179, 0.932), rgb(255, 255, 255));
+  border: 2px solid rgb(80, 80, 80);
+  border-radius:2px;
 
   
+  font-size: 18px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+box-shadow: -2px 3px #c2c2c2;
+text-align: center;
+
+
+}
+
+  .grid-child.of {
+   height: 96%;
+   margin:10px;
+   font-style: bold;
+   
+    border-radius:8px;
+    border: 0px solid rgb(58, 58, 58);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.815), rgb(255, 255, 255));
+    box-shadow: 0px 8px #a0a0a0;
+    font: size 12px;
+    font-family:'Courier New', Courier, monospace;
+    
+  }
+  h4{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+  }
+
+  .grid-child.of:hover {
+    box-shadow: 0 0 7px 5px rgba(21, 150, 255, 0.726);
+
+  }
 
   iframe:hover {
-    box-shadow: 0 0 3px 2px rgba(0, 186, 243, 0.5);
+    box-shadow: 0 0 6px 5px rgba(42, 188, 255, 0.842);
   }
   div.scrollmenu {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     white-space: nowrap;
     overflow-y: auto;
     width: auto;
+    border-radius: 8px;
   
   }
 
@@ -57,10 +124,46 @@
     height: 130px; /* Set a small width */
    margin: 5px
   }
+  h1:hover{
+    padding: 10px 20px;  
+    overflow:hidden;
+    font-size: 2.5em;
   
+  }
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+  a{
+    font-size: 16px;
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    color: rgb(43, 43, 43);
+    border-radius: 2px
+  
+  
+
+  }
+  a:hover{
+    box-shadow: 0 0 2px 2px rgba(0, 166, 243, 0.5);
+ 
+  }
   /* Add a hover effect (blue shadow) */
   img:hover {
-    box-shadow: 0 0 2px 2px rgba(0, 166, 243, 0.5);
+    box-shadow: 0 0 2px 3px rgb(0, 174, 255);
   }
   
   div.scrollmenu a {
@@ -72,14 +175,19 @@
     
     
   }
+  .statusmenu{
+    overflow-y: auto;
+
+  }
   
   div.scrollmenu a:hover {
     background-color: rgb(190, 190, 190);
+    
   
   }
   
 body{
-  background-image: linear-gradient(180deg, rgb(245, 245, 245), rgb(196, 196, 196));
+  background-image: linear-gradient(180deg, rgb(245, 245, 245), rgb(218, 218, 218));
 
 }
   
@@ -88,5 +196,20 @@ body{
     iframe {
       width: 100%;
       margin-top: 0;
+  
     }
+  .grid-child.of{
+    visibility: hidden;
+    width:0%;
   }
+  }
+
+  
+
+.grid-container {
+  background-image: linear-gradient(180deg, rgb(228, 228, 228), rgb(173, 173, 173));
+  box-shadow: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 0px;
+}
