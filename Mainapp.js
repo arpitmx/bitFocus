@@ -1,11 +1,4 @@
- var firebaseConfig = {
-  apiKey: "AIzaSyDYzz1xPTK-AL7U2oJdti1q29YbPbzIT1E",
-  authDomain: "bitedu-c90af.firebaseapp.com",
-  projectId: "bitedu-c90af",
-  storageBucket: "bitedu-c90af.appspot.com",
-  messagingSenderId: "1054743811950",
-  appId: "1:1054743811950:web:389f7b49b613862eb8537f"
-};
+
 
 firebase.initializeApp(firebaseConfig);
 
