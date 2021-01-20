@@ -1,4 +1,4 @@
-# SUAS 📚
+# BitEdu 📚
 Shut Up And Study is a recommendation less YT videos streaming for students for minimizing timewaste ;)
 
 ## Steps:
