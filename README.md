@@ -8,7 +8,7 @@ Shut Up And Study is a recommendation less YT videos streaming for students for 
 1. Just paste all the youtube SHARED links seperated by commas(,) and click submit to build the video stack.
 2. Watch with complete focus.
 
->Live : www.bitpolarity.in/bitedu
+>Live : http://bitpolarity.in/bitedu/
 
 ## Screens:
 <p float="left">
