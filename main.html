@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <head>
   <title>
-    Lecture Hall
+   BitEdu v0.0.2
   </title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script type="text/javascript" src="app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+
+
+
 </head>
 
-<body>
+<body id = "bddy">
 
-<div><h1 >Lecture Hall 📚 </h1></div>
+<script type="text/javascript" src="Mainapp.js"></script>
 
-<div class = "row">
+<div><h1>BitEdu 📚 |
+  <a id="vtitle">Topic</a> 
+</h1></div>
+
+
+ <div class = "grid-container">
  
-  <div class="column">
+  <div class="grid-child if">
 
   <iframe id="banner" width="400" height="315" 
   src = "https://www.youtube.com/embed/BuYLZigga7U?rel=0"
@@ -21,19 +34,42 @@
   clipboard-write; encrypted-media; gyroscope;
    picture-in-picture" allowfullscreen>
   </iframe>
-
 </div>
  
+  <div class="grid-child of">
+    <h4 style='text-align:center; font-size:1.2em'> FocusNama 🎯 </h4>
+    <!-- <iframe id="banner2" width="50px" height="50px" 
+  src = "https://www.youtube.com/embed/BuYLZigga7U?rel=0"
+  frameborder="0" allow="accelerometer; autoplay; 
+  clipboard-write; encrypted-media; gyroscope;
+   picture-in-picture" allowfullscreen>
+   -->
+
+  <nav>
+  <ul id = "status" class="statusmenu" >
+    <br><br>
+   
+   
+    </ul>
+</nav>
+
+
+</div>
+
+
+
+ </div> 
   
 
 
-<h2 id= 'timer'>Up Next🔥</h2>
+<h2 id= 'timer'>Up Next ⏭️</h2>
 <div id= "lis" class="scrollmenu" name = "scroll"></div> 
+ 
 
 <script>
  
  var mainBanner = document.getElementById("banner");
- mainBanner.src = "https://www.youtube.com/embed/"+ids[0]+"?rel=0"
+ mainBanner.src = "https://www.youtube.com/embed/"+ids[0]+"?enablejsapi=1"
 
   console.log("https://www.youtube.com/embed/"+ids[0]+"?rel=0")
   console.log(links)
@@ -50,24 +86,44 @@ for (var i = 0; i < links.length ; i ++){
 
 
 }
+
+
+
 for (var i = 0, len = listt.children.length; i < len; i++)
 {
 
     (function(index){
         listt.children[i].onclick = function(){
-              alert("Ready for the next series !") ;
-              mainBanner.src = "https://www.youtube.com/embed/"+ids[index]+"?rel=0"
- 
+              alert("Oh My God Topper !",2000) ;
+              mainBanner.src = "https://www.youtube.com/embed/"+ids[index]+"?enablejsapi=1"
+              pstate = false;
+              console.log(pstate); 
+              
+              player = new YT.Player('banner', {
+          height: '390',
+          width: '640',
+          videoId: ids[index],
+          playerVars:{'rel':0},
+          events: {
+          'onReady': onReady,
+          'onStateChange': onPlayerStateChange      
+        }
+          });
+
+        //  document.getElementById("vtitle").innerHTML= player.getVideoData().title;
+
+
+         //currV = ids[index];
         }    
     })(i);
 
+   
     
 }
 
 
 
   </script>
-
 
 
 </body>
