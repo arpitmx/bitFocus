@@ -1,10 +1,10 @@
-# BitEdu 📚
-Shut Up And Study is a recommendation less YT videos streaming for students for minimizing timewaste ;)
+# BitFocus 📚
+BitFocus is a recommendationless YT videos streaming for students for minimizing timewaste ;)
 
 #Version Code
   Version : 'v0.0.2'
 
-## Steps:
+## Steps to use :
 1. Just paste all the youtube SHARED links seperated by commas(,) and click submit to build the video stack.
 2. Watch with complete focus.
 
