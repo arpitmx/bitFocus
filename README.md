@@ -1,5 +1,5 @@
-# BitFocus 📚
-BitFocus is a recommendationless YT videos streaming for students for minimizing timewaste ;)
+# bitFocus 📚
+bitFocus is a recommendationless YT with no ads videos streaming for students for minimizing timewaste ;)
 
 #Version Code
   Version : 'v0.0.2'
