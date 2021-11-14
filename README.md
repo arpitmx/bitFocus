@@ -17,3 +17,6 @@ bitFocus is a recommendationless YT with no ads videos streaming for students fo
   <img src="https://github.com/arpitmaurya/SUAS/blob/main/Screenshots/Screenshot%20from%202021-01-18%2022-38-46.png" width="250" />
   <img src="https://github.com/arpitmaurya/SUAS/blob/main/Screenshots/Screenshot%20from%202021-01-18%2022-38-58.png" width="250" />
 </p>
+
+
+<img src="https://user-images.githubusercontent.com/59350776/141678560-87a180ef-5bbc-4c9b-a89f-0108877f49cf.png" width="350">
